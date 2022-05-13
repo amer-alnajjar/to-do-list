@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.todo-container {
+  width: 800px;
+  margin: 100px auto 0;
+  background-color: antiquewhite;
+}
+.add-name {
+  display: flex;
+  position: relative;
+  padding: 20px;
+  background-color: rgba(255, 140, 0, 0.5);
+}
+.add-name input {
+  padding: 14px;
+  background-color: rgb(255, 140, 0);
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+}
+.add-name input:focus {
+  outline: none;
+}
+.add-name .plus {
+  background-color: white;
+  font-size: 50px;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  right: 20px;
+  font-weight: bold;
+  color: rgb(255, 140, 0);
+  transition: 0.3s;
+}
+.add-name .plus:hover {
+  transform: rotate(90deg);
+}
+.todo-container .name-container {
+  padding: 20px;
+}
+.todo-container .name-container .no-name {
+  color: darkorange;
+  font-size: 24px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.todo-container .name-container .name-box {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.todo-container .name-container .name-box p {
+  font-size: 24px;
+  color: darkorange;
+  cursor: pointer;
+}
+.todo-container .name-container .name-box button {
+  border: none;
+  background-color: darkorange;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.todo-container .name-container .name-box button:active {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+}
+.todo-container .name-container .name-box .p.finech {
+  text-decoration: line-through;
+}
+.names {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  text-align: center;
+}
+.names .num-name,
+.names .registered-name {
+  font-size: 24px;
+  color: darkorange;
+}
+.names .num-name span,
+.names .registered-name span {
+  background-color: darkorange;
+  padding: 0px 5px;
+  border-radius: 5px;
+  color: white;
+}
